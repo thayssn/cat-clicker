@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Cat Clicker</title>
+		<style>
+			.cat{
+				margin: 20px;
+			}
+			img{
+				max-width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="cats_list" class="list">
+		</ul>
+
+		<div id="cats_display">
+			<div class="cat_name">${cat.name}</div>
+			<div class="cat_clicks">${cat.clicks}</div>
+			<img src="" class="cat_image" alt="">
+		</div>
+
+		<div id="admin_area">
+			<button id="activate_admin">Admin</button>
+			<form>
+				<div>
+					<label for="input_name">Nome</label>
+					<input name="name" id="input_name" type="text">
+				</div>
+				<div>
+					<label for="input_url">Url</label>
+					<input name="url" id="input_url" type="text">
+				</div>
+				<div>
+					<label for="input_clicks">Clicks</label>
+					<input id="input_clicks" name="clicks" type="number">
+				</div>
+				<button type="submit">Salvar</button>
+			</form>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
